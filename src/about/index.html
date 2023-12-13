@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="author" content="Zemi" />
+		<meta name="description" content="Zemi's Personal Portfolio" />
+		<meta name="theme-color" content="#FFFFFF" />
+		<meta name="twitter:image" property="og:image" content="../assets/icons/favicon-128x.png" />
+		<link property="image" href="../assets/icons/favicon-128x.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+		<title>About me - Zemi</title>
+
+		<script defer data-domain="zemi.space" src="https://plausible.io/js/script.js"></script>
+	</head>
+
+	<body data-barba="wrapper" class="theme-body">
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+		</style>
+		<div id="loader">
+			<div class="grid grid-cols-2 grid-rows-2 rotating">
+				<div class="w-12 h-12 bg-theme-1 rounded-tl-full"></div>
+				<div class="w-12 h-12 bg-theme-2 rounded-tr-full"></div>
+				<div class="w-24 h-1Z bg-theme-3 rounded-bl-full col-span-2"></div>
+			</div>
+		</div>
+		<div class="px-8 max-w-screen-2xl flex flex-col w-full">
+			<nav id="navbar" class="w-full h-12 z-10 flex justify-between text-center items-center gap-3 flex-wrap text-lg md:text-xl py-0 md:py-5">
+				<a data-cursor="drag" class="text-theme-button-primary nav-item" id="nav-dir">~/</a>
+				<a data-cursor="drag" class="nav-item" id="a-home" href="../index.html">Home</a>
+				<a data-cursor="drag" class="nav-item" id="a-projects" href="../projects/index.html">Projects</a>
+				<a data-cursor="drag" class="nav-item" id="a-about" href="./">About</a>
+			</nav>
+			<main data-barba="container" data-barba-namespace="about" class="main absolute w-full h-full left-0 top-10 md:top-0">
+				<section class="p-10 md:p-16 lg:p-32">
+					<div class="flex flex-col justify-center items-start md:items-start gap-5">
+						<h1 class="text-title whitespace-normal mb-4">About me</h1>
+						<h2 class="adaptive-text-big flex flex-wrap gap-x-2 font-bold">
+							Well hello there! glad you found me, i'm
+							<p class="text-theme-accent">Zemi</p>
+							and
+							<p id="age">15</p>
+							years old.
+						</h2>
+
+						<h3 class="adaptive-text">I started coding at a young age, and it quickly became a hobby that I'm passionate about. I love the challenge of solving problems and building useful applications.</h3>
+						<!-- <p class="adaptive-text">I enjoy taking on challenges and working through complex problems. I believe that software development is not only about writing code, but also about understanding the user's needs and finding the best way to fulfill them. That's why I take a user-centered approach to development, always striving to create intuitive, user-friendly applications.</p> -->
+						<p class="adaptive-text">I also enjoy creating models with Blender and playing Minecraft on my spare time. I'm familiar with Fusion 360 and can confidently use Illustrator and Photoshop. And last but not least, i like ducks🦆</p>
+						<p class="adaptive-text">You can contact me using the card below to ask me about something, or to just say hello!</p>
+						<p class="adaptive-text">peace😛✌️</p>
+					</div>
+					<div class="flex gap-8 flex-wrap">
+						<div id="contact-card" class="py-2 px-4 bg-white dark:bg-neutral-800 w-fit rounded-xl overflow-hidden mt-4 h-fit shadow-lg hover:shadow-xl transition-shadow">
+							<p class="text-lg">Contact me</p>
+							<div class="flex justify-between gap-2">
+								<a href="https://discord.gg/zSScuCwwwu"><img data-cursor="fill" src="../assets/discord.svg" alt="Discord logo" class="contact-card-icon" /></a>
+								<a href="mailto:hello@zemi.space"><img data-cursor="fill" src="../assets/email.svg" alt="Generic mail logo" class="contact-card-icon" /></a>
+							</div>
+						</div>
+						<div id="now-playing" class="bg-theme-secondary dark:bg-theme-primary w-80 rounded-xl grid grid-cols-4 overflow-hidden mt-4 h-20 shadow-lg hover:shadow-xl transition-shadow" style="transform: translateY(100px)">
+							<img id="spotify-album-image" alt="Spotify album image" />
+							<div class="col-span-3 bg-white dark:bg-neutral-800 text-gray-500 dark:text-gray-300 whitespace-nowrap overflow-hidden">
+								<div class="overflow-hidden w-full h-full track-info-container inline-block">
+									<p id="spotify-artist-name" class="truncate mt-2 ml-3 block">Aperture Science Psychoacoustic Laboratories</p>
+									<p id="spotify-track-name" class="text-green-500 truncate text-xl ml-3 block">Reconstructing More Science</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<div id="cover">
+			<h2 id="cover-text" class="text-5xl font-bold">About</h2>
+		</div>
+		<script type="text/javascript" src="../../node_modules/ipad-cursor-js/index.js"></script>
+		<script type="module" src="../script.js"></script>
+	</body>
+</html>

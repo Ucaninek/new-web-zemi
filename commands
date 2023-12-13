@@ -1,0 +1,3 @@
+npx parcel ./src/index.html ./src/404.html ./src/projects/index.html ./src/about/index.html
+npx parcel build ./src/index.html ./src/404.html ./src/projects/index.html ./src/about/index.html
+npx tailwindcss -i ./src/rawstyles.css -o ./src/style.css --watch

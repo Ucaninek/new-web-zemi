@@ -1,0 +1,30 @@
+{
+  "name": "new-web-zemi",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "@barba/css": "^2.1.15",
+    "animejs": "^3.2.1",
+    "dotenv": "^16.0.3",
+    "ipad-cursor-js": "^1.2.1",
+    "isomorphic-fetch": "^3.0.0",
+    "jquery": "^3.6.4",
+    "locomotive-scroll": "^4.1.4",
+    "three": "^0.152.2",
+    "twemoji": "^14.0.2"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "buffer": "^5.7.1",
+    "parcel": "^2.9.3",
+    "querystring-es3": "^0.2.1",
+    "tailwindcss": "^3.3.3"
+  }
+}

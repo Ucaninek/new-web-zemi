@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="w-full">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="author" content="Zemi" />
+		<meta name="description" content="Zemi's Personal Portfolio" />
+		<meta name="theme-color" content="#FFFFFF" />
+		<meta name="twitter:image" property="og:image" content="../assets/icons/favicon-128x.png" />
+		<link property="image" href="../assets/icons/favicon-128x.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico" />
+		<title>Projects - Zemi</title>
+
+		<script defer data-domain="zemi.space" src="https://plausible.io/js/script.js"></script>
+	</head>
+
+	<body data-barba="wrapper" class="theme-body">
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+		</style>
+		<div id="loader">
+			<div class="grid grid-cols-2 grid-rows-2 rotating">
+				<div class="w-12 h-12 bg-theme-1 rounded-tl-full"></div>
+				<div class="w-12 h-12 bg-theme-2 rounded-tr-full"></div>
+				<div class="w-24 h-1Z bg-theme-3 rounded-bl-full col-span-2"></div>
+			</div>
+		</div>
+		<div class="px-8 max-w-screen-2xl flex flex-col w-full">
+			<nav id="navbar" class="w-full h-12 z-10 flex justify-between text-center items-center gap-3 flex-wrap text-lg md:text-xl py-0 md:py-5">
+				<a data-cursor="drag" class="text-theme-button-primary nav-item" id="nav-dir">~/</a>
+				<a data-cursor="drag" class="nav-item" id="a-home" href="../index.html">Home</a>
+				<a data-cursor="drag" class="nav-item" id="a-projects" href="./">Projects</a>
+				<a data-cursor="drag" class="nav-item" id="a-about" href="../projects/index.html">About</a>
+			</nav>
+			<main data-barba="container" data-barba-namespace="projects" class="main absolute w-full h-full left-0 top-10">
+				<section class="p-10 md:p-16 lg:p-32 flex flex-col gap-y-16">
+					<div class="flex flex-col justify-center items-start md:items-start gap-5">
+						<h1 class="text-title whitespace-normal">Projects</h1>
+						<h3 class="text-2xl md:text-2xl lg-text:3xl max-w-5xl">Here's a list of my projects, either active or abandoned, useful or useless, fun or boring.</h3>
+					</div>
+					<div data-scroll-container>
+						<div id="projects-container" class="w-full h-full flex flex-wrap justify-start items-center gap-8 md:gap-12 lg:gap-16 xl:gap-20">
+							<div id="project-container">
+								<p class="text-xl">UsbBuild</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>its a neat little tool to make your usb sticks protected against shitty usb shortcut malware. it works by creating an allowed folder and denying all permissions to everyone in the root folder of the drive.</p>
+							</div>
+							<div id="project-container">
+								<p class="text-xl">QRCrypt</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>this is a proof-of-concept encoding system where the text gets converted into a QR Code and then converted back to text by reading the pixels of the QR one by one.</p>
+								<img src="../assets/projects/QRCrypt.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">Abstract Connected Circles</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>i saw a program like this sitting at my old disk and i thought that it was too cool to not be recreated.</p>
+								<img src="../assets/projects/abstractcc.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">Parental Controls App Launcher</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>This app can start programs that are blocked by parental controls.</p>
+								<img src="../assets/projects/ParentalControlsAppLauncher.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">Parental Controls Settings Editor</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>no one likes parental controls. this thing can make wpcmon grant you extra time etc. if you have admin permissions.</p>
+								<img src="../assets/projects/ParentalControlSettingsEditor.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">Pupimaka Anti Screaming Utility</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>My brother screams and rages a lot when playing league of legends. since we are in the same room i wanted to give him a taste of his own medicine. this program detects screaming and plays some loud earrape getting longer and longer each time.</p>
+								<img src="../assets/projects/screamutil.jpg" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">zemi.space v2</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-green-500 pill-tag">Active</p>
+									<p class="bg-blue-600 pill-tag">Web3</p>
+									<p class="bg-violet-700 pill-tag">Parcel</p>
+								</div>
+								<p>Initially built with react, i've decided to go with parcel and use barba for cool transitions :></p>
+							</div>
+							<div id="project-container">
+								<p class="text-xl">zVault</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>a version 2 of ZemisLocker, this neat little app takes your files, encrypts them with the provided password using AES256, so you never have to worry about someone spying over your files 👀</p>
+								<img src="../assets/projects/zvault.gif" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">zFolderLock</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>Based on zVault, but for folders. it opens your protected folder in a temp directory and closes it back when you are done, applying any changes made.</p>
+								<img src="../assets/projects/zfolderlock.gif" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container" id="project-container">
+								<p class="text-xl">ImmersiveStuff</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+									<p class="bg-green-400 pill-tag">Fun</p>
+									<p class="bg-pink-500 pill-tag">Useless</p>
+								</div>
+								<p>It makes nyan cats invade your computer. it works by taking a screenshot of your desktop, and then modifying it to make cool visuals.</p>
+								<img src="../assets/projects/immersivestuff.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">zLagger</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">On Break</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>A minecraft "hack" that cuts your internet in a specific way so you gain advantage against other players. works with netlimiter api.</p>
+								<img src="../assets/projects/zlagger.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">LedController</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-teal-500 pill-tag">Arduino</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>My MSI B350M Motherboard software could only present a whopping selection of 7 colors on my leds so i hooked them up to an arduino and this app communicates with it, settings are stored in Arduinos EEPROM (shame on you msi)</p>
+								<img src="../assets/projects/ledcontroller.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">RFID</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-purple-500 pill-tag">Completed</p>
+									<p class="bg-teal-500 pill-tag">Arduino</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>This is a background task that locks my computer again and again until i show my rfid card to the arduino on my desk.</p>
+							</div>
+							<div id="project-container">
+								<p class="text-xl">ZemisLocker</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-rose-500 pill-tag">Abandoned</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>This was an app for securely encrypting your files so no one else can access them. it was corrupting some files and working flawlessly with some files, i never knew why until i made zVault.</p>
+								<img src="../assets/projects/zemislocker.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">UwUClicker</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-rose-500 pill-tag">Abandoned</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>A sequel to MacroClicker, this would have a fancy ui, more options and custom hotkeys, but it was so hard to manage due to its custom "tabbing" system i just ended up not finishing it.</p>
+								<img src="../assets/projects/uwuclicker.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">MacroClicker</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-rose-500 pill-tag">Abandoned</p>
+									<p class="bg-amber-500 pill-tag">.Net C#</p>
+								</div>
+								<p>This is a auto clicker that i made when i was 11 years old for playing Minecraft.</p>
+								<img src="../assets/projects/macroclicker.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">OwOCryptor</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-rose-500 pill-tag">Abandoned</p>
+									<p class="bg-blue-400 pill-tag">.Net Visual Basic</p>
+								</div>
+								<p>This was one of my first projects, it encrypted your desktop, not properly, possibly corrupting your files. back then i thought that vb.net was the best language lol</p>
+								<img src="../assets/projects/owocryptor.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+							<div id="project-container">
+								<p class="text-xl">WindowsUpgrader</p>
+								<div id="pills" class="flex flex-wrap gap-2 mb-2">
+									<p class="bg-rose-500 pill-tag">Abandoned</p>
+									<p class="bg-blue-400 pill-tag">.Net Visual Basic</p>
+								</div>
+								<p>This was my first dotnet project, it disabled task manager and locked you away from your computer. i made this following a tutorial on youtube.</p>
+								<img src="../assets/projects/windowsupgrader.png" alt="Placeholder" class="cover-project-image" />
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<div id="cover">
+			<h2 id="cover-text" class="text-5xl font-bold">About</h2>
+		</div>
+		<script type="module" src="../script.js"></script>
+		<script type="text/javascript" src="../../node_modules/ipad-cursor-js/index.js"></script>
+	</body>
+</html>
